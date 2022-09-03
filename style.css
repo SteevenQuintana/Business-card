@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  /*  Primary */
+
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: rgba(110, 30, 160, 0.7);
+  --Soft-violet2: hsla(277, 64%, 61%);
+
+  /*  Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --Slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-dark-blue);
+  color: var(--White);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.card {
+  width: 328px;
+  height: 782px;
+  margin: 88px auto 20px;
+  background-color: var(--Dark-desaturated-blue);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.image {
+  height: 240px;
+  background-image: linear-gradient(var(--Soft-violet), var(--Soft-violet)),
+    url(./images/image-header-mobile.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.section2 {
+  padding: 40px 33px;
+  text-align: center;
+}
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  height: 115px;
+}
+span {
+  color: var(--Soft-violet2);
+}
+p {
+  color: var(--Slightly-transparent-white);
+  font-family: "Inter", sans-serif;
+  line-height: 25px;
+  height: 137px;
+}
+.data {
+  line-height: 25px;
+  color: var(--Slightly-transparent-white2);
+  text-transform: uppercase;
+}
+.amount {
+  font-size: 1.45em;
+  font-weight: 700;
+  color: var(--White);
+}
+.concept {
+  font-size: 0.8em;
+  padding-bottom: 33px;
+}
+.attribution {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 1110px;
+    height: 448px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 120px auto 80px;
+  }
+  .image {
+    width: 540px;
+    height: 100%;
+    background-image: linear-gradient(var(--Soft-violet), var(--Soft-violet)),
+      url(./images/image-header-desktop.jpg);
+  }
+  .section2 {
+    padding: 75px 70px;
+    text-align: left;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    line-height: 25px;
+    margin-right: 70px;
+  }
+  .data {
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+} ;
